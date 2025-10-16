@@ -78,4 +78,4 @@ An intelligent AI-powered data analysis agent that transforms raw data into acti
 3. Define analysis tools
 4. Train and deploy agent
 
-[Video Demo](https://youtu.be/NXJAkGPFiuw)
+[Video Demo](https://youtu.be/39P7QYNDjSo)

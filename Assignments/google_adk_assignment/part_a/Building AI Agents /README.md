@@ -51,4 +51,4 @@ Equip AI agents with the ability to execute external code and API calls, enablin
 
 ## 📚 Resources
 - [Google Codelab](https://codelabs.developers.google.com/devsite/codelabs/build-agents-with-adk-empowering-with-tools)
-- [Video Demo](https://youtu.be/NXJAkGPFiuw)
+- [Video Demo](https://youtu.be/39P7QYNDjSo)

@@ -54,4 +54,4 @@ An intelligent AI agent for handling complex travel queries by securely connecti
 
 ## 📚 Resources
 - [Google Codelab](https://codelabs.developers.google.com/travel-agent-mcp-toolbox-adk)
-- [Video Demo](https://youtu.be/NXJAkGPFiuw)
+- [Video Demo](https://youtu.be/39P7QYNDjSo)
