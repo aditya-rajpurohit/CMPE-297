@@ -1,0 +1,87 @@
+🔬 Comprehensive Data Analysis Report
+==================================================
+
+Report Generated: 2025-10-28 00:36:52
+
+📊 DATA SUMMARY
+--------------------
+Total Rows: 536641
+Total Columns: 8
+
+Column Types:
+  InvoiceNo: object
+  StockCode: object
+  Description: object
+  Quantity: int64
+  InvoiceDate: object
+  UnitPrice: float64
+  CustomerID: float64
+  Country: object
+
+🕳️ MISSING VALUES
+--------------------
+  InvoiceNo: 0
+  StockCode: 0
+  Description: 0
+  Quantity: 0
+  InvoiceDate: 0
+  UnitPrice: 0
+  CustomerID: 0
+  Country: 0
+
+📈 DESCRIPTIVE STATISTICS
+-------------------------
+Quantity:
+  Mean: 9.6200
+  Median: 3.0000
+  Std Dev: 219.1302
+  Min: -80995.0000
+  Max: 80995.0000
+  25Th Percentile: 1.0000
+  75Th Percentile: 10.0000
+UnitPrice:
+  Mean: 4.6327
+  Median: 2.0800
+  Std Dev: 97.2331
+  Min: -11062.0600
+  Max: 38970.0000
+  25Th Percentile: 1.2500
+  75Th Percentile: 4.1300
+CustomerID:
+  Mean: 15246.8982
+  Median: 15145.0000
+  Std Dev: 1483.9316
+  Min: 12346.0000
+  Max: 18287.0000
+  25Th Percentile: 14367.0000
+  75Th Percentile: 16241.0000
+
+🔗 CORRELATION INSIGHTS
+----------------------
+Quantity:
+  Positive Correlations:
+  Negative Correlations:
+UnitPrice:
+  Positive Correlations:
+  Negative Correlations:
+CustomerID:
+  Positive Correlations:
+  Negative Correlations:
+
+⚠️ OUTLIER ANALYSIS
+--------------------
+Quantity:
+  Outliers Count: 58501
+  Outliers Percentage: 10.90%
+  Lower Bound: -12.5000
+  Upper Bound: 23.5000
+UnitPrice:
+  Outliers Count: 39450
+  Outliers Percentage: 7.35%
+  Lower Bound: -3.0700
+  Upper Bound: 8.4500
+CustomerID:
+  Outliers Count: 0
+  Outliers Percentage: 0.00%
+  Lower Bound: 11556.0000
+  Upper Bound: 19052.0000

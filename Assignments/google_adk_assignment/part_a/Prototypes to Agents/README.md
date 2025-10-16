@@ -35,5 +35,6 @@ An intelligent AI agent built with Google's Vertex AI Agent Development Kit (ADK
 - Vertex AI API access
 - Python virtual environment
 
-[Google Codelab](https://codelabs.developers.google.com/your-first-agent-with-adk)
-[Video Demo](https://youtu.be/39P7QYNDjSo)
+## 📚 Resources
+- [Google Codelab](https://codelabs.developers.google.com/your-first-agent-with-adk)
+- [Video Demo](https://youtu.be/39P7QYNDjSo)

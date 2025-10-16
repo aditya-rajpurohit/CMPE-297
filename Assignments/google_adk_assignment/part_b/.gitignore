@@ -20,9 +20,6 @@ build/
 *.xlsx
 *.json
 
-# Analysis Results
-analysis_results/
-
 # IDE Specific
 .vscode/
 .idea/
