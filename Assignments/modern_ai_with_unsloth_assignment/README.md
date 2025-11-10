@@ -1,78 +1,117 @@
-# 🧠 Full Finetuning of SmolLM2-135M on AG News (Topic Classification)
+# Modern AI with unsloth.ai
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1DQPkFwldJZ0LkYIn1xFy_IygrQc-F3cK?usp=sharing)
+## 📋 Project Overview
+A comprehensive exploration of fine-tuning techniques for the SmolLM2-135M language model across different domains and tasks.
 
-## 📋 Overview
-This project demonstrates **full finetuning** of the **SmolLM2-135M** model on the **AG News** dataset using Hugging Face Transformers.   The goal is to train the model to classify short news articles into four topics — **World**, **Sports**, **Business**, and **Sci/Tech** — using an **instruction-style text format**.
+## 🚀 Projects Breakdown
 
-## ⚙️ Key Details
-- **Model:** [`HuggingFaceTB/SmolLM2-135M`](https://huggingface.co/HuggingFaceTB/SmolLM2-135M)  
-- **Dataset:** [`ag_news`](https://huggingface.co/datasets/ag_news)  
+### 1. 📰 News Topic Classification 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1DQPkFwldJZ0LkYIn1xFy_IygrQc-F3cK)
 
-## 🧩 Notebook Steps
-1. **Setup & Installs** – Install lightweight Hugging Face dependencies.  
-2. **Imports & Auth** – Load libraries and optionally log in to Hugging Face / W&B.  
-3. **Load Model** – Import the SmolLM2 base model and tokenizer.  
-4. **Prepare Dataset** – Format AG News into an instruction-style prompt and tokenize.  
-5. **Train Model** – Run full fine-tuning using `Trainer`.  
-6. **Evaluate & Test** – Generate predictions on unseen news articles.  
-7. **Save / Push** – Save the trained model locally or upload to Hugging Face Hub.
+**Objective:** 
+- Classify news articles into four topics
+- Topics: World, Sports, Business, Sci/Tech
+- Dataset: AG News
 
+**Methodology:**
+- Full fine-tuning of SmolLM2-135M
+- Instruction-style text formatting
+- Comprehensive model training approach
 
+**Key Steps:**
+- Load pre-trained SmolLM2-135M model
+- Prepare AG News dataset
+- Format data into instruction prompts
+- Train using Hugging Face Trainer
+- Evaluate model performance
 
+### 2. 🐦 Tweet Sentiment Analysis
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1EzYOFZVQMmHWYQ41514CZyTQyZNpsJZg)
 
+**Objective:**
+- Classify tweet sentiments
+- Labels: Negative, Neutral, Positive
+- Dataset: TweetEval Sentiment
 
+**Methodology:**
+- LoRA (Low-Rank Adaptation) fine-tuning
+- 4-bit model loading for VRAM efficiency
+- Parameter-efficient training
 
-# 🚀 LoRA Fine-Tuning of SmolLM2-135M on TweetEval Sentiment
+**Key Steps:**
+- Load SmolLM2 in 4-bit precision
+- Attach LoRA adapters
+- Use TRL's SFTTrainer
+- Create instruction-style prompts
+- Train and generate one-word labels
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1EzYOFZVQMmHWYQ41514CZyTQyZNpsJZg?usp=sharing)
+### 3. 🧮 Math Preference Optimization
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1_rVwfLe0W8xhjmxW7v5gxiQhL2JHxTAB)
 
-## 📌 Overview
-This project performs **parameter-efficient LoRA fine-tuning** of **SmolLM2-135M** on **TweetEval/Sentiment** (labels: *Negative*, *Neutral*, *Positive*) using **Unsloth**.  
-We load the base model in **4-bit** to save VRAM, attach **LoRA adapters**, and train via **TRL’s SFTTrainer** with an **instruction-style prompt**.
+**Objective:**
+- Improve mathematical reasoning
+- Train model to prefer correct solutions
+- Use preference pairs dataset
 
-## 🧱 Key Components
-- **Model**: `unsloth/smollm2-135m`  
-- **Dataset**: `tweet_eval` → `sentiment`  
-- **Method**: LoRA (`r=16`, `lora_alpha=16`, `lora_dropout=0.05`)  
-- **Precision**: 4-bit loading (bitsandbytes) + `bf16/fp16` for training  
-- **Trainer**: `trl.SFTTrainer` (supervised finetuning)
+**Methodology:**
+- Direct Preference Optimization (DPO)
+- LoRA + 4-bit quantization
+- Unsloth-based efficient training
 
-## 🔧 Notebook Flow
-1. **Installs** – Minimal, pinned to a stable stack for TRL/Transformers + Unsloth.  
-2. **Auth** – (Optional) Login to HF Hub + W&B for logging and pushing.  
-3. **Load Base Model (4-bit)** – `FastLanguageModel.from_pretrained(...)`.  
-4. **Attach LoRA** – `FastLanguageModel.get_peft_model(...)`.  
-5. **Dataset & Prompting** – Build instruction-style prompts for Tweet→Label.  
-6. **Train** – SFT with `eval_strategy/evaluation_strategy` handled version-safely.  
-7. **Inference** – Generate one-word labels (*Negative/Neutral/Positive*).  
-8. **Save / Push** – Save LoRA adapters locally or push to HF Hub.
+**Key Steps:**
+- Load SmolLM2-135M-Instruct model
+- Prepare math reasoning preference dataset
+- Attach LoRA adapters
+- Run DPO training
+- Test model on math problems
 
+### 4. 🔢 Advanced Math Reasoning
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1zjOUCCckHdqwD53NOpTKoNU4yi48nLQn)
 
+**Objective:**
+- Enhance step-by-step math reasoning
+- Improve final answer accuracy
+- Dataset: GSM8K
 
+**Methodology:**
+- Group Relative Preference Optimization (GRPO)
+- Reinforcement learning approach
+- Reward-based model improvement
 
-# 🧮 DPO Fine-Tuning of SmolLM2-135M on Math Preference Dataset
+**Key Steps:**
+- Load SmolLM2-135M-Instruct
+- Prepare GSM8K dataset
+- Define reward function
+- Generate multiple responses
+- Train using relative performance
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1_rVwfLe0W8xhjmxW7v5gxiQhL2JHxTAB?usp=sharing)
+### 5. 🌍 Turkish Language Adaptation
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1T7qxdDMcEX9ApICzFyiVvyA32pkXhtlB)
 
-## 📘 Overview
-This project demonstrates **Direct Preference Optimization (DPO)** fine-tuning of the **SmolLM2-135M-Instruct** model using **Unsloth** for efficient 4-bit and LoRA-based training.  
-The dataset contains small **math reasoning preference pairs** — each with a *prompt*, a *preferred (chosen)* solution, and a *rejected* solution.  
-The goal is to align the model to prefer **correct mathematical reasoning** and reject incorrect answers.
+**Objective:**
+- Adapt model to Turkish language
+- Improve linguistic capabilities
+- Enable fluent Turkish text generation
 
-## ⚙️ Key Details
-- **Model:** [`unsloth/SmolLM2-135M-Instruct`](https://huggingface.co/unsloth/SmolLM2-135M-Instruct)  
-- **Method:** Direct Preference Optimization (DPO)  
-- **Techniques:** LoRA (parameter-efficient) + 4-bit quantization (VRAM-efficient)  
+**Methodology:**
+- Continued Pretraining (CPT)
+- Next-token prediction
+- Domain-specific language adaptation
 
-## 🧩 Notebook Flow
-1. **Install & Auth** – Sets up Unsloth, TRL, PEFT, and authenticates Hugging Face + W&B.  
-2. **Dataset** – Loads or creates a small math preference dataset (`prompt`, `chosen`, `rejected`).  
-3. **Model Setup** – Loads SmolLM2 in 4-bit and attaches LoRA adapters.  
-4. **DPO Training** – Runs lightweight preference optimization with Unsloth’s patched `DPOTrainer`.  
-5. **Inference** – Tests the model on unseen math problems.  
-6. **Save / Push** – Saves the fine-tuned model locally or uploads it to the Hugging Face Hub.
+**Key Steps:**
+- Load base SmolLM2-135M model
+- Create Turkish text corpus
+- Use causal language modeling
+- Train for multiple epochs
+- Test Turkish language fluency
 
+## 🛠️ Common Technologies
+- Hugging Face Transformers
+- Unsloth
+- 4-bit Quantization
+- LoRA Adapters
 
-
-
+## 📦 Resources
+- [SmolLM2-135M Model](https://huggingface.co/HuggingFaceTB/SmolLM2-135M)
+- [Unsloth GitHub](https://github.com/unslothai/unsloth)
+- [Video Demo](https://youtu.be/w3EZLmHZZK4)

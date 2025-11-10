@@ -10,11 +10,11 @@ code vulnerability detection task. The first criterion considers if the LLM (con
 
 ## Medium Article
 For a simplified explanation of the topic, you can read the article on Medium:
-[Article Link]()
+[Article Link](https://medium.com/@aditya-rajpurohit/when-large-language-models-learn-from-their-mistakes-smarter-few-shot-learning-for-code-ebfd64ea3e70)
 
 ## Video Overview
 For a detailed explanation of this topic, check out the YouTube video overview:  
-[Video Link]()
+[Video Link](https://youtu.be/GunmNbXVvpw)
 
 ## Citation
 If you use insights from this work, please cite:  
