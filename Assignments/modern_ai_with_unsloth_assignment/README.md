@@ -1,6 +1,6 @@
 # 🧠 Full Finetuning of SmolLM2-135M on AG News (Topic Classification)
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]([YOUR_NOTEBOOK_LINK_HERE](https://colab.research.google.com/drive/1DQPkFwldJZ0LkYIn1xFy_IygrQc-F3cK?usp=sharing))
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1DQPkFwldJZ0LkYIn1xFy_IygrQc-F3cK?usp=sharing)
 
 ## 📋 Overview
 This project demonstrates **full finetuning** of the **SmolLM2-135M** model on the **AG News** dataset using Hugging Face Transformers.   The goal is to train the model to classify short news articles into four topics — **World**, **Sports**, **Business**, and **Sci/Tech** — using an **instruction-style text format**.
@@ -25,7 +25,7 @@ This project demonstrates **full finetuning** of the **SmolLM2-135M** model on t
 
 # 🚀 LoRA Fine-Tuning of SmolLM2-135M on TweetEval Sentiment
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]([YOUR_COLAB_NOTEBOOK_LINK_HERE](https://colab.research.google.com/drive/1EzYOFZVQMmHWYQ41514CZyTQyZNpsJZg?usp=sharing))
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1EzYOFZVQMmHWYQ41514CZyTQyZNpsJZg?usp=sharing)
 
 ## 📌 Overview
 This project performs **parameter-efficient LoRA fine-tuning** of **SmolLM2-135M** on **TweetEval/Sentiment** (labels: *Negative*, *Neutral*, *Positive*) using **Unsloth**.  
@@ -53,7 +53,7 @@ We load the base model in **4-bit** to save VRAM, attach **LoRA adapters**, and 
 
 # 🧮 DPO Fine-Tuning of SmolLM2-135M on Math Preference Dataset
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]([YOUR_COLAB_NOTEBOOK_LINK_HERE](https://colab.research.google.com/drive/1_rVwfLe0W8xhjmxW7v5gxiQhL2JHxTAB?usp=sharing))
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1_rVwfLe0W8xhjmxW7v5gxiQhL2JHxTAB?usp=sharing)
 
 ## 📘 Overview
 This project demonstrates **Direct Preference Optimization (DPO)** fine-tuning of the **SmolLM2-135M-Instruct** model using **Unsloth** for efficient 4-bit and LoRA-based training.  
